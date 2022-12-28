@@ -104,8 +104,8 @@ const IndexCoordonnees = () => {
     return (
         <div className='container'>
             <div className='post_list'>
-                <div className='title_bar'>
-                    <div className='title_bar_item'>
+                <div className='title_bar m-5'>
+                    <div className='title_bar_item   '>
                         <h1>Coordonnees</h1>
                     </div>
 
@@ -121,8 +121,10 @@ const IndexCoordonnees = () => {
       <thead>
         <tr>
           {/* <th>#</th> */}
+          <th>id</th>
           <th>First name</th>
           <th>Last name</th>
+          
           <th>Title</th>
           <th>Phone number</th>
 
@@ -139,28 +141,30 @@ const IndexCoordonnees = () => {
             return <tr key={index}>
             <td>{coordonnee.id}</td>
             <td>{coordonnee.first_name}</td>
-            <td>{coordonnee.phone_number}</td>
+            <td>{coordonnee.last_name}</td>
+
             <td>{coordonnee.title}</td>
+            <td>{coordonnee.phone_number}</td>
+          
             <td>{coordonnee.description}</td>
             <td>{coordonnee.birth_date}</td>
             <td>{coordonnee.cv_url}</td>
             <td><img src={'./images/'+coordonnee.image} width='50' /></td>
 
            
-            <td>{coordonnee.last_name}</td>
     
             <td>
               {/* fach ndghto 3la button n execetiw method editPost  */}
-              <button className='btn btn-primary m-2' onClick={() => editCoordonnee(coordonnee.id)}>Update</button>
+              <button className='btn btn-primary m-2' onClick={() => editCoordonnee(coordonnee.id)}>Modifier</button>
               {/* fach ndghto 3la button n execetiw method deletePost  */}
-              <button className='btn btn-danger' onClick={() => deleteCoordonnee(coordonnee.id)}>Delete</button>
+              <button className='btn btn-danger' onClick={() => deleteCoordonnee(coordonnee.id)}>Supprimer</button>
             </td>
           </tr>
           }))
         }
       </tbody>
     </Table>
-    <div className='title_bar'>
+    <div className='title_bar  m-5'>
       <div className='title_bar_item'>
                         <h1>Adresse</h1>
                     </div>
@@ -178,10 +182,10 @@ const IndexCoordonnees = () => {
       <thead>
         <tr>
           {/* <th>#</th> */}
-          <th>rue</th>
-          <th>code postal</th>
-          <th>ville</th>
-          <th>pays</th>
+          <th>Rue</th>
+          <th>Code postal</th>
+          <th>Ville</th>
+          <th>Pays</th>
 
          
         </tr>
@@ -199,9 +203,9 @@ const IndexCoordonnees = () => {
     
             <td>
               {/* fach ndghto 3la button n execetiw method editPost  */}
-              <button className='btn btn-primary m-2' onClick={() => editAdresse(adresse.id)}>Update</button>
+              <button className='btn btn-primary m-2' onClick={() => editAdresse(adresse.id)}>Modifier</button>
               {/* fach ndghto 3la button n execetiw method deletePost  */}
-              <button className='btn btn-danger' onClick={() => deleteAdresse(adresse.id)}>Delete</button>
+              <button className='btn btn-danger' onClick={() => deleteAdresse(adresse.id)}>Supprimer</button>
             </td>
           </tr>
           }))

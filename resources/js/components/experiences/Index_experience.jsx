@@ -56,8 +56,8 @@ const IndexExperience = () => {
     }
     return (
         <div className='container'>
-            <div className='post_list'>
-                <div className='title_bar'>
+            <div className='post_list '>
+                <div className='title_bar    m-5'>
                     <div className='title_bar_item'>
                         <h1>Experience</h1>
                     </div>

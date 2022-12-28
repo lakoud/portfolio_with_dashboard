@@ -79,7 +79,7 @@ const NewCoordonnee = () => {
     {/* 
         onClick = wa9t li nadghto 3la submit n3mlo execute l method mta3 react smitha createPost li wsst mnha nb3to request l api f backend dyal laravel li defininaha f api.php w PostController 
     */}
-    <button href="#" onClick={(event) => createCoordonnee(event)} className="btn btn-primary">Add Project</button>
+    <button href="#" onClick={(event) => createCoordonnee(event)} className="btn btn-primary">Add Coordonnee</button>
     </form>
   </div>
 </div>

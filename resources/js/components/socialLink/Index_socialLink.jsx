@@ -57,7 +57,7 @@ const IndexSocialLink = () => {
     return (
         <div className='container'>
             <div className='post_list'>
-                <div className='title_bar'>
+                <div className='title_bar   m-5'>
                     <div className='title_bar_item'>
                         <h1>SocialLink</h1>
                     </div>

@@ -54,21 +54,21 @@ const NewAdresse= () => {
         <div className="container">
 
             <div className="card">
-  <h5 className="card-header">Add New Adresse</h5>
+  <h5 className="card-header">Ajouter Adresse</h5>
   <div className="card-body">
     <form>
      {/* value = {title} , title f 7ala hadia hwa variable li 3mlna lo setter lfo9 f react wlli dkhlnah b idina f form o jbnah mn formData /// onChange = y3ni w9t li fama haja tkteb 
      wsst input kan7toha f variable title 3an tari9 settter setTitle , w name = 'title' hwa li bih formData ynjjem y3ref form li 7na nt3amlo m3ah 
      */}
-    <input type="text" value={rue} onChange={(event) => {setrue(event.target.value)}} name="first_name" className="form-control mb-4" placeholder="first_name"/>
-    <input type="text" value={code_postal} onChange={(event) => {setcode_postal(event.target.value)}} name="last_name" className="form-control mb-4" placeholder="last_name"/>
-    <input type="text" value={ville} onChange={(event) => {setville(event.target.value)}} name="phone_number" className="form-control mb-4" placeholder="phone_number"/>
-    <input type="text" value={pays} onChange={(event) => {setpays(event.target.value)}} name="title" className="form-control mb-4" placeholder="title"/>
+    <input type="text" value={rue} onChange={(event) => {setrue(event.target.value)}} name="rue" className="form-control mb-4" placeholder="rue"/>
+    <input type="text" value={code_postal} onChange={(event) => {setcode_postal(event.target.value)}} name="code postal" className="form-control mb-4" placeholder="code postal"/>
+    <input type="text" value={ville} onChange={(event) => {setville(event.target.value)}} name="ville" className="form-control mb-4" placeholder="ville"/>
+    <input type="text" value={pays} onChange={(event) => {setpays(event.target.value)}} name="pays" className="form-control mb-4" placeholder="pays"/>
    
     {/* 
         onClick = wa9t li nadghto 3la submit n3mlo execute l method mta3 react smitha createPost li wsst mnha nb3to request l api f backend dyal laravel li defininaha f api.php w PostController 
     */}
-    <button href="#" onClick={(event) => createCoordonnee(event)} className="btn btn-primary">Add Project</button>
+    <button href="#" onClick={(event) => createCoordonnee(event)} className="btn btn-primary">Add Adresse</button>
     </form>
   </div>
 </div>
